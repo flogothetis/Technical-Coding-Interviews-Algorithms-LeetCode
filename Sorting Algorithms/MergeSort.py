@@ -1,5 +1,6 @@
 import math
 
+
 # Merge Sort Algorithm
 # Total Compleity : O(NLogN) time
 # Total Space: O(N) space from merge function
@@ -38,17 +39,17 @@ def mergeSort(array):
         return
 
     n = len(array)
-    if len(array)>1:
+    if len(array) > 1:
         # Calcalte middle
         mid = int(math.floor(n // 2))
         leftArray = mergeSort(array[:mid])
         rightArray = mergeSort(array[mid:])
-        result=merge(leftArray, rightArray)
+        result = merge(leftArray, rightArray)
         return result
     return array
 
 
-#Driver code
+# Driver code
 a = [12, 11, 13, 5, 6, -8, 7]
 print("Given array is")
 print(*a)
