@@ -21,7 +21,8 @@ def quickSort(array, low, high):
         quickSort(array, pi+1, high)
 
 # Driver code to test above
-arr = [10, 7, 8, 9, 1, 5]
+arr= [ 3,2,0,123,1234,-1,3]
+
 n = len(arr)
 quickSort(arr,0,n-1)
 print ("Sorted array is:")
