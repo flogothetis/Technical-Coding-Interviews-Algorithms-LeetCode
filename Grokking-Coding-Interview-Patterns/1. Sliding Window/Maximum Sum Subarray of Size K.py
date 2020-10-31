@@ -1,3 +1,9 @@
+'''''
+Problem Statement #
+Given an array of positive numbers and a positive number ‘k’, find the maximum sum 
+of any contiguous subarray of size ‘k’.
+'''''
+
 # Time Comlexity : O(N)
 # Space Compexity: O(1)
 def maximumSubArraySizeK (array, K):
@@ -11,8 +17,8 @@ def maximumSubArraySizeK (array, K):
             globalMaxWindow = max(globalMaxWindow,windowSum)
             windowSum = windowSum - array[windowStart]
             windowStart+=1
-    return globalMaxWindow
 
+    return globalMaxWindow
 
 # Driver Code
 input = [2, 1, 5, 1, 3, 2]
