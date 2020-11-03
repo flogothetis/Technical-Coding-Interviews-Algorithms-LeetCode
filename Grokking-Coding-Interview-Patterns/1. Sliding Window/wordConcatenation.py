@@ -1,10 +1,8 @@
 '''
-
 Words Concatenation (hard) #
 Given a string and a list of words, find all the starting indices of substrings in the given string that are
- a concatenation of all the given words exactly once without any overlapping of words. It is given that all
-  words are of the same length.
-
+a concatenation of all the given words exactly once without any overlapping of words. It is given that all
+words are of the same length.
 '''
 
 # Time Complexity : O (N*M)
@@ -34,7 +32,6 @@ def wordConcatenation(string , words_l):
 				windowStart += word_size
 				continue
 		else:
-			dictionary[string[windowStart:windowStart+word_size]]+=1
 			windowStart+=word_size
 			continue
 
