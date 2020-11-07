@@ -1,4 +1,8 @@
+'''
+Count of Structurally Unique Binary Search Trees (hard) #
 
+Given a number ‘n’, write a function to return the count of structurally unique Binary Search Trees (BST) that can store values 1 to ‘n’.
+'''
 
 class TreeNode:
   def __init__(self, val):
